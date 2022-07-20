@@ -1,0 +1,154 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+    background-image: url(./images/man\).png);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    position: relative;
+    padding: 3em 7em;
+    color: white;
+}
+
+body::after {
+    content: '';
+    background-image: url(./images/overlay_.png);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+}
+
+header nav {
+    display: flex;
+    width: 50%;
+    justify-content: space-between;
+}
+
+header ul {
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+    width: 50%;
+    height: 30%;
+}
+
+header ul li {
+    transition: all 0.5s ease;
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -ms-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    cursor: pointer;
+    font-size: 20px;
+}
+
+header ul li:hover,
+header ul li.active {
+    border-bottom: 2px solid white;
+}
+
+header nav input {
+    padding: 1em 2em;
+    border-radius: 3rem;
+    -webkit-border-radius: ;
+    -moz-border-radius: ;
+    -ms-border-radius: ;
+    -o-border-radius: ;
+    width: 25%;
+    height: 5%;
+}
+
+header img {
+    width: 8%;
+    height: 20%;
+    border-radius: 5rem;
+    -webkit-border-radius: 5rem;
+    -moz-border-radius: 5rem;
+    -ms-border-radius: 5rem;
+    -o-border-radius: 5rem;
+    cursor: pointer;
+}
+
+main {
+    width: 50%;
+    margin-bottom: 3em;
+}
+
+main h1 {
+    font-size: 120px;
+    width: 50%;
+}
+
+main p {
+    width: 40%;
+    margin-bottom: 2em;
+}
+
+main a {
+    color: #112dac;
+    font-weight: bold;
+    letter-spacing: 3px;
+    text-decoration: none;
+    background-color: white;
+    padding: 1em 3em;
+    border-radius: 3rem;
+    -webkit-border-radius: 3rem;
+    -moz-border-radius: 3rem;
+    -ms-border-radius: 3rem;
+    -o-border-radius: 3rem;
+    transition: 0.5s;
+    -webkit-transition: 0.5s;
+    -moz-transition: 0.5s;
+    -ms-transition: 0.5s;
+    -o-transition: 0.5s;
+}
+
+main a:hover {
+    box-shadow: 6px 6px 2px rgb(0, 0, 0);
+}
+
+footer {
+    display: flex;
+    justify-content: space-between;
+}
+
+footer .icons a {
+    text-decoration: none;
+}
+
+footer .icons i {
+    margin-right: 2em;
+    color: #02092b;
+    text-align: center;
+    text-decoration: none;
+    font-size: 25px;
+}
+
+.text {
+    text-align: end;
+    width: 30%;
+
+}
+
+.text h3 {
+    font-size: 30px;
+}
+
+.text p {
+    width: 100%;
+    text-align: end;
+}
